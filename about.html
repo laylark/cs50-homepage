@@ -1,38 +1,94 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link href="styles.css" rel="stylesheet">
-        <title>About</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="/index.html">Home</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="/about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/resume.html">Resume</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/blog.html">Blog</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-        hello, homepage
-    </body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>About</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/resume.html">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-info" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <h1>Who is Layla?</h1>
+      <div class="container">
+        <pre class="code overflow-auto">
+<span class="red">class</span> <span class="orange">SoftwareDeveloper</span> {
+
+    <span class="purple">constructor</span>(newDeveloper) { 
+        this.<span class="blue">name =</span> newDeveloper;
+        this.<span class="blue">role =</span> <span class="ltblue">'Software Developer'</span>;
+    }
+
+    <span class="blue">technologies =</span> {
+        <span class="blue">webDev</span>: { 
+          <span class="blue">html</span>: <span class="ltblue">'HTML5'</span>,
+          <span class="blue">css</span>: <span class="ltblue">'CSS3'</span>,
+          <span class="blue">js</span>: [<span class="ltblue">'Vanilla Javascript'</span>, <span class="ltblue">'ES6'</span>],
+        }, 
+        <span class="blue">devTools</span>: { 
+          <span class="blue">git</span>: <span class="ltblue">'Git'</span>, 
+          <span class="blue">shell</span>: <span class="ltblue">'Shell'</span>, 
+        },
+    }; 
+
+    <span class="purple">learnCoolStuff</span>() {
+        this.<span class="blue">technologies.mobileApp =</span> {ionic: <span class="ltblue">'Ionic'</span>};
+        this.<span class="blue">technologies.backEnd =</span> {node: <span class="ltblue">'Node'</span>};
+    }
+}
+
+<span class="red">const</span> me = <span class="red">new</span> <span class="orange">SoftwareDeveloper</span>(<span class="ltblue">'Layla'</span>); 
+me.<span class="purple">learnCoolStuff</span>();
+        </pre>
+      </div>
+    </main>
+  </body>
 </html>
