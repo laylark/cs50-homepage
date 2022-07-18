@@ -57,18 +57,21 @@
           <form class="d-flex">
             <input
               class="form-control me-2"
+              id="input"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button class="btn btn-outline-info" type="submit">Search</button>
+            <button class="btn btn-outline-info" id="search-btn" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </div>
     </nav>
     <main>
-      <p class="gradient-text index-p name">Layla Krauss</p>
-      <p class="index-p">Developer</p>
+      <p class="gradient-text index-p name" id="name">Layla Krauss</p>
+      <p class="index-p" onclick="changeColor()">Developer</p>
       <div class="icons">
         <a
           class="bi bi-envelope"
@@ -97,5 +100,6 @@
         ></a>
       </div>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>

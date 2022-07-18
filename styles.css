@@ -16,10 +16,29 @@ body {
   justify-content: center;
   letter-spacing: 0.05em;
   font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gradient-text.newColors {
+  background-image: linear-gradient(
+    45deg,
+    #a7489b 16.666%,
+    #476098 16.666%,
+    #476098 33.333%,
+    #60988c 33.333%,
+    #60988c 50%,
+    #f1c343 50%,
+    #f1c343 66.666%,
+    #e1419c 66.666%,
+    #e1419c 83.333%,
+    #ca427f 83.333%
+  );
 }
 
 .name {
   padding-top: 0.5em;
+  cursor: default;
 }
 
 h1 {
